@@ -17,14 +17,20 @@ body {
 /**
  * Links
  */
-a {
+ 
+a.one {
   font-weight: normal;
   text-decoration: none; 
   color:#54ca7d;
-  text-decoration:underline;
 }
-a:focus {
+a.one:focus {
   outline: thin dotted;
+}
+
+a {
+  font-weight: normal;
+  text-decoration: underline; 
+  color:#54ca7d;
 }
 
 small {

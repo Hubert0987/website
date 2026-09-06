@@ -20,7 +20,7 @@ body {
 a {
   font-weight: normal;
   text-decoration: none; 
-  color:#EF6D3D;
+  color:#54ca7d;
 }
 a:focus {
   outline: thin dotted;
@@ -91,10 +91,9 @@ blockquote p:last-child {
  */
 
 /* Full size background image */
-html, #container, .inner { background-color:transparent;}
+html, #container, .inner { background-color: #c0bbbe;}
 html {
-  background:url(background.jpg) center center no-repeat fixed;
-  background-size:cover;
+
 }
 body {
   max-width:800px;
@@ -108,6 +107,11 @@ header, #content, footer {
 iframe {
   max-width:100%;
 }
+.packImg {
+	max-width:100%;
+	padding: 15px 0;
+}
+
 
 /* Menu Links */
 ul.main-menu {
@@ -129,7 +133,39 @@ ul.main-menu li a:hover {
 }
 ul.main-menu li a.active {
   color:#FFFFFF;
-  border-bottom-color:#EF6D3D;
+  border-bottom-color:#54ca7d;
+}
+
+/* Buttons */
+.buttonHeader {
+  background-color: #AFC0D2;
+  border: none;
+  color: #262626;
+  padding:20px;
+  box-sizing:border-box;
+  width:100%;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 36px;
+  font-weight:bold;
+  cursor: pointer;
+  text-align:center;
+}
+.buttonSub {
+  background-color: #AFC0D2;
+  border: none;
+  color: #262626;
+  padding:15px;
+  box-sizing:border-box;
+  width:100%;
+  text-align: justify;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 28px;
+  font-weight:bold;
+  cursor: pointer;
+  text-align:center;
 }
 
 /* Utility classes */

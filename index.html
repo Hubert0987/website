@@ -20,22 +20,19 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
 
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     
   </head>
   
   <body>
 
     <header id="header">
-      <img src="logo.png">
-      <h1>Simple Website</h1>
+      <!--<img src="logo.png" style="width:10vw"/>-->
+      <h1>Hubert's Homepage</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
         <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#packs">packs</a></li>
       </ul>                 
     </header>
    
@@ -46,22 +43,31 @@
           <div id="home" class="content-region hide">
             <h2>Home</h2>
             <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
+              I love video games
             </p>
           </div>
           
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
-            <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
+          <div id="packs" class="content-region hide">
+			<button onclick="toggleCont('mainPacks')" class="buttonHeader">Main Packs</button>
+			<div id="mainPacks" class="content-region hide">
+				
+				<p><a href="https://www.dropbox.com/scl/fi/2g9jjmnoblfvgpmupxsmy/Hubert-s-Hubris.zip?rlkey=u2xzur3dlc9jis7fmpu9989zu&st=sz52mql5&dl=0">
+					<img src="pack banners/hubris1.png" class="packImg">
+				</a></p>
+				
+				<p><a href="https://www.dropbox.com/scl/fi/4v3zie7iet58zsdero5ju/Hubert-s-Hubris-2.zip?rlkey=a3cujvk027f6ev7rbm90zvhrd&st=gv8cwq2j&dl=0">
+					<img src="pack banners/hubris2.png" class="packImg">
+				</a></p>
+
+				<p><a href="https://www.dropbox.com/scl/fi/1nlmu3s51v6m5nmy7fvzy/Hubert-s-Hypertension.zip?rlkey=4misnel5654z81esm7rbpjt70&st=t40tbkll&dl=0">
+					<img src="pack banners/hyper1.png" class="packImg">
+				</a></p>
+				
+				<p><a href="https://www.dropbox.com/scl/fi/c0opji7zpb0qgndt5oz5g/Hubert-s-Hypertension-2.zip?rlkey=yubzbym20tu3utv7c3k0f0l4x&st=9o62n9v8&dl=0">
+					<img src="pack banners/hyper2.png" class="packImg">
+				</a></p>
+
+			</div>
           </div>
           
         </div>
@@ -69,7 +75,7 @@
     </div>
 
     <footer>  
-      Footer region
+      
     </footer>
     
     <!-- Load additional JS scripts here -->

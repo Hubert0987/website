@@ -11,7 +11,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: Consolas, monaco, monospace;
-  color: #FFFFFF;
+  color: #b4befe;
 }
 
 /**
@@ -21,7 +21,7 @@ body {
 a.one {
   font-weight: normal;
   text-decoration: none; 
-  color:#54ca7d;
+  color:#a6e3a1;
 }
 a.one:focus {
   outline: thin dotted;
@@ -30,7 +30,7 @@ a.one:focus {
 a {
   font-weight: normal;
   text-decoration: underline; 
-  color:#54ca7d;
+  color:#a6e3a1;
 }
 
 small {
@@ -98,7 +98,8 @@ blockquote p:last-child {
  */
 
 /* Full size background image */
-html, #container, .inner { background-color: #c0bbbe;}
+/* Desktop */
+html, #container, .inner { background-color: #1e1e2e;}
 html {
 /*  background:url(background.jpg) center center no-repeat fixed;
   background-size:cover;*/
@@ -107,12 +108,18 @@ html {
 body {
   display:flex;
   max-width:800px;
+  width:80%;
   margin:25px auto;
 }
-header, #content, footer { 
-  background: rgba(0,0,0,.8); 
+header {
+  background: #060609; 
   padding:25px;
-  color:#FFFFFF; 
+  color:#b4befe; 
+}
+#content, footer { 
+  background: #0b0b11; 
+  padding:25px;
+  color:#b4befe; 
 }
 iframe {
   max-width:100%;
@@ -128,6 +135,52 @@ iframe {
 	font-size:2.0rem;
 }
 
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+  html, #container, .inner { background-color: #1e1e2e;}
+  html {
+  /*  background:url(background.jpg) center center no-repeat fixed;
+    background-size:cover;*/
+    overflow-y: scroll;
+  }
+  body {
+    display:grid;
+    margin:25px auto;
+  }
+  header {
+    background: #060609; 
+    padding:25px;
+    color:#b4befe; 
+  }
+  #content, footer { 
+    background: #0b0b11; 
+    padding:25px;
+    color:#b4befe; 
+  }
+  iframe {
+    max-width:100%;
+  }
+  .packImg {
+    max-width:100%;
+    height:auto;
+    padding: 15px 0;
+    object-fit: contain;
+  }
+  .center {
+    width:100%;
+    text-align:center;
+      white-space: pre-line;
+    font-size:2.0rem;
+  }
+}
+@media (max-width:600px) {
+  #buh {
+    max-width:200px;
+    height:auto;
+  }
+}
+
 /* Menu Links */
 ul.main-menu {
   margin: 10px 0;
@@ -139,21 +192,21 @@ ul.main-menu li a {
   margin-right:20px;
   font-size:2.0rem;
   border-bottom: solid transparent 3px;
-  color:#cfd2da;
+  color:#b4befe;
 }
 ul.main-menu li a:hover {
-  color:#FFFFFF;
+  color:#b4befe;
 }
 ul.main-menu li a.active {
-  color:#FFFFFF;
+  color:#b4befe;
   border-bottom-color:#54ca7d;
 }
 
 /* Buttons */
 .buttonHeader {
-  background-color: #AFC0D2;
+  background-color: #9ba4db;
   border: none;
-  color: #262626;
+  color: #0b0b11;
   padding:20px;
   box-sizing:border-box;
   width:100%;
@@ -166,9 +219,9 @@ ul.main-menu li a.active {
   text-align:center;
 }
 .buttonSub {
-  background-color: #AFC0D2;
+  background-color: #9ba4db;
   border: none;
-  color: #262626;
+  color: #0b0b11;
   padding:15px;
   box-sizing:border-box;
   width:100%;
@@ -179,6 +232,25 @@ ul.main-menu li a.active {
   font-weight:bold;
   cursor: pointer;
   text-align:center;
+}
+
+/* Mobile (<600px) */
+@media (max-width: 600px) {
+  .buttonHeader {
+    background-color: #9ba4db;
+    border: none;
+    color: #0b0b11;
+    padding:5px;
+    box-sizing:border-box;
+    max-width:100%;
+    text-align: justify;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-weight:bold;
+    cursor: pointer;
+    text-align:center;
+  }
 }
 
 /* Utility classes */

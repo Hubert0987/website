@@ -100,9 +100,12 @@ blockquote p:last-child {
 /* Full size background image */
 html, #container, .inner { background-color: #c0bbbe;}
 html {
-
+/*  background:url(background.jpg) center center no-repeat fixed;
+  background-size:cover;*/
+  overflow-y: scroll;
 }
 body {
+  display:flex;
   max-width:800px;
   margin:25px auto;
 }
@@ -127,10 +130,8 @@ iframe {
 
 /* Menu Links */
 ul.main-menu {
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: left;
   list-style: none;
 }
